@@ -1,0 +1,129 @@
+
+
+#wrapper{
+	position : relative;
+	width: 1000px;
+	height : 621px;
+	background-image : url("img/fond.png");
+	margin : auto;
+	
+}
+
+#imgmonstre{
+	position : absolute;
+	width: 1000px;
+	height : 621px;
+	background-image : none;
+	margin : auto;
+	background-repeat:no-repeat;
+	background-position:center center;
+}
+
+#votrenom{
+	position : absolute;
+	Top : -15px;
+	left: 500px;	
+}
+
+#zoneJeu{
+	width : 1000px;
+	height : 720px;	
+	background-color : blue;
+	position : absolute;
+	display: none;
+}
+
+.blocClass{
+	display : inline-block;
+	margin : 5px;
+	border : 1px solid black;
+}
+
+.blocClass p{
+	margin : 10px;
+}
+
+.titreClasse{
+	font-size : 22px;
+}
+
+.blocClass label{
+	margin : 5px;
+}
+
+.titreClasse{
+	
+}
+
+.stat{
+	width : 30px;
+	height : 30px;
+	background-color : #b3bd21;
+	border : 1px solid black;
+	text-align : center;
+	font-size : 20px;
+	margin-top : 5px;
+}
+
+#statPerso, #statMonstre{
+	font-size : 10px;
+}
+
+.gestionPerso{
+	font-size : 25px;
+	width : 50px;
+	height : 50px;
+}
+
+.boitestat{
+	display : inline-block;
+	cursor : pointer;
+}
+
+.boitestat .signe{
+	width : 25px;
+	height : 25px;
+	cursor : pointer;
+	border : 1px solid #b3bd21;
+	display : inline-block;
+	text-align: center;
+	margin-top: 5px;
+}
+
+.mobs{
+	display: inline-block;	
+	vertical-align: top
+}
+
+#statMonstre{
+	margin-left: 400px;
+}
+
+#choixJeu{
+	display: none;
+	margin-left : 50px;
+}
+#finDeTour{
+		position : absolute;
+		top : 560px;
+		left : 880px;
+}
+
+#capa{
+	position : absolute;
+	left: 300px;
+	top :100px;
+}
+
+#ptsRestant{
+	display : none;
+}
+
+#zonePerso{
+	margin-left : 55px;
+	padding-top : 50px;
+}
+
+#force{
+	background-color : #d04709;
+}

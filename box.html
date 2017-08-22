@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>sheeps's not dead</title>
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+	
+  </head>
+  <body>
+  
+ <div id="wrapper">
+	<div id="imgmonstre">
+  
+		<!-- zone Des Choix______________________________________________________________________________________________
+		///////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+	
+	
+		<!-- zone Du Jeu______________________________________________________________________________________________
+		///////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+	<h1 id="votrenom"> </h1><br/>
+	<div id="choixJeu" class="zones">		</br>
+		</br>
+		<div id="zoneMonstre">
+			<div id="idMonstre" class="mobs">
+				<h1> Le monstre : </h1>
+				<div id="mnom"></div>
+				<div id="mclasse"></div>
+			</div>	
+			<div id="statMonstre" class="mobs"> 
+						<div class="boitestat">		
+									force :		
+									 <div id="mforce" class="stat"> 0 </div>
+						</div>
+						<div class="boitestat">	
+									endu :
+									 <div id="mendu" class="stat"> 0 </div>
+						</div>
+						<div class="boitestat">	
+									agi :
+									 <div id="magi" class="stat"> 0 </div>
+						</div>
+						<div class="boitestat">	
+									char :
+									 <div id="mchari" class="stat"> 0 </div>
+						</div>
+						<div class="boitestat">	
+									int :
+									 <div id="minte" class="stat"> 0 </div>
+						</div>
+						<div class="boitestat">	
+									pv :
+									 <div id="mpv" class="stat">1</div>
+						</div><br/>			
+			</div>
+		</div>				
+		
+	</div>
+	<button id='finDeTour'> Fin de tour  </button>
+	
+	<div id="zonePerso">
+		<div id="formulaire" >
+			<form method="post" action="traitement.php">
+				<p>
+					Choisissez votre Pseudo:</br>
+					<label for="nom"> </label><input type="texte" name="nom" value='Ex : JeanSansJambes' id="nom" /> </br>
+				</p>
+			
+			   <p>
+				  <span> Choisissez votre classe et une capacité :</span><br />
+				   <div class="blocClass">
+					   <p class="titreClasse"> <input type="radio" class="classes" name="classe" value="combattant" id="combattant" /> <label for="combattant">Combattant</label>	</p><br/>				
+							<div id="combattantClasse" class="capa">
+								<input type="radio" class="capaCombattant" name="capaClass" value="estoc" id="estoc"/><label for="estoc">estoc</label><br />
+								<input type="radio" class="capaCombattant" name="capaClass" value="bouclier" id="bouclier"/><label for="bouclier">bouclier</label><br />
+							</div>
+					</div>	
+							
+					<div class="blocClass">
+					  <p class="titreClasse"> <input type="radio" class="classes" name="classe" value="erudit" id="erudit" /> <label for="erudit">Erudit</label></p><br/>	
+							<div id="eruditClasse" class="capa">
+								<input type="radio" class="capaMage" value="BDF" name="capaClass" id="BDF"/><label for="BDF">Boule de feu</label><br />
+								<input type="radio" class="capaMage" value="glace" name="capaClass" /><label for="glace">Glace</label><br />	
+							</div>	
+					</div>
+			   </p>
+			</form>
+		</div>
+			   
+		<div id="choixstat"> 
+			
+				<div id="choisissezVosStats"> Choisissez vos statistiques : </div>
+				<div id="statPerso">
+					<div class="boitestat">		
+								force :		
+								 <div id="force" class="stat"> 0 </div>
+					</div>
+					<div class="boitestat">	
+								endu :
+								 <div id="endu" class="stat"> 0 </div>
+					</div>
+					<div class="boitestat">	
+								agi :
+								 <div id="agi" class="stat"> 0 </div>
+					</div>
+					<div class="boitestat">	
+								char :
+								 <div id="chari" class="stat"> 0 </div>
+					</div>
+					<div class="boitestat">	
+								int :
+								 <div id="inte" class="stat"> 0 </div>
+					</div>
+					<div class="boitestat">	
+								pv :
+								 <div id="pv" class="stat">1</div>
+					</div><br/>
+				</div>
+				<div class="boitestat">	
+						<div id="signes"> 	<div id="moins"  class="gestionPerso signe"> - </div>
+								<div  id="plus" class="gestionPerso signe"> + </div>
+						</div> 		
+							Points réstants :
+							 <span id="reservePerso">10</span><br/>
+						
+
+					<button id='validation'> Validation </button>		 
+				</div>	
+		</div>
+		<div id='ptsRestant'>vos points d'action restant pour ce tour : <span id="ptsAction"></span></div><br/>
+		<div id="capa">
+				<div id="cdb" class="mescapas"> </div>
+		</div>
+			
+		
+	
+		</div><!-- zone perso-->
+	</div><!-- imgmonstre-->
+</div><!-- wrapper-->
+ <div id="mort"> Vous êtes mort </div>
+	<script src="bibli.js"></script>
+	<script src="jquery.js"></script>
+	<script src="fonctions.js"></script>	
+	<script src="script.js"></script>
+</body>
+	
